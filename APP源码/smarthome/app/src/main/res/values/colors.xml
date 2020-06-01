@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#96d4ff</color>
+    <color name="colorPrimaryDark">#96d4ff</color>
+    <color name="colorAccent">#96d4ff</color>
+
+    //电量颜色：蓝色
+    <color name="blue">#0EA3E9</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#0b0002</color>
+</resources>

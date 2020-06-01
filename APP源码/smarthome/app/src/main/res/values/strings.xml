@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">遥控器</string>
+
+    //当前电量：96%
+    <string name="power_now">当前电量：96%</string>
+    //开
+    <string name="on">开</string>
+    //关
+    <string name="off">关</string>
+</resources>

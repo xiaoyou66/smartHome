@@ -1,0 +1,9 @@
+
+asquid:S1192u"JDefine a constant instead of duplicating this literal "12345678" 12 times.(ú¢‘”
+qsquid:S001166"TRename this field "temp_show" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘íäÉøÿÿÿÿ
+tsquid:S001168"WRename this field "curtain_show" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(³³ôÃüÿÿÿÿ
+rsquid:S001169"URename this field "light_show" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(€¶æ™ùÿÿÿÿ
+qsquid:S00116:"TRename this field "lock_show" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âš×»ýÿÿÿÿ
+lsquid:S00116<"TRename this field "open_lock" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ˜ë
+isquid:S3776p"RRefactor this method to reduce its Cognitive Complexity from 41 to the 15 allowed.(‰¢¼
+P"squid:SwitchLastCaseIsDefaultCheckq""Add a default case to this switch.(ŽºÖ

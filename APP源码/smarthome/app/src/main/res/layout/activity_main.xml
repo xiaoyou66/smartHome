@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.app.progresviews.ProgressWheel
+                    android:id="@+id/power"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    app:barWidth="5dp"
+                    app:countText="空调"
+                    app:countTextColor="@android:color/black"
+                    app:countTextSize="20sp"
+                    app:defTextColor="@android:color/black"
+                    app:defTextSize="10sp"
+                    app:definitionText=""
+                    app:marginBtwText="15dp"
+                    app:percentage="360"
+                    app:progressColor="@color/blue"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/temp_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="当前温度：--℃"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/open_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/on"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/close_air"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/off"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/temp_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="升温"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/temp_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="降温"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.app.progresviews.ProgressWheel
+                    android:id="@+id/water"
+                    android:layout_width="150dp"
+                    android:layout_height="125dp"
+                    app:barWidth="5dp"
+                    app:countText="饮水机"
+                    app:countTextColor="@android:color/black"
+                    app:countTextSize="20sp"
+                    app:defTextColor="@android:color/black"
+                    app:defTextSize="10sp"
+                    app:definitionText=""
+                    app:marginBtwText="15dp"
+                    app:percentage="360"
+                    app:progressColor="@color/blue"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/water_pattern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/black"
+                    android:text="当前模式：--"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/make_hot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="制热"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/make_cold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="常温"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <!--<Switch-->
+                <!--android:id="@+id/swi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:showText="true"-->
+                <!--android:switchTextAppearance="@style/SwitchTheme"-->
+                <!--android:textOff="关灯"-->
+                <!--android:textOn="开灯"-->
+                <!--android:thumb="@drawable/switch_rectangle_thumb_selector"-->
+                <!--android:track="@drawable/switch_rectangle_track" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="电灯"/>
+
+                <TextView
+                    android:id="@+id/light_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="电灯状态：--"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="关灯"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="开灯"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <!--<Switch-->
+                <!--android:id="@+id/swi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:showText="true"-->
+                <!--android:switchTextAppearance="@style/SwitchTheme"-->
+                <!--android:textOff="关灯"-->
+                <!--android:textOn="开灯"-->
+                <!--android:thumb="@drawable/switch_rectangle_thumb_selector"-->
+                <!--android:track="@drawable/switch_rectangle_track" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="门锁"/>
+
+                <TextView
+                    android:id="@+id/lock_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="门锁状态：--"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/open_lock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="开锁"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp">
+
+                <!--<Switch-->
+                <!--android:id="@+id/swi"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:showText="true"-->
+                <!--android:switchTextAppearance="@style/SwitchTheme"-->
+                <!--android:textOff="关灯"-->
+                <!--android:textOn="开灯"-->
+                <!--android:thumb="@drawable/switch_rectangle_thumb_selector"-->
+                <!--android:track="@drawable/switch_rectangle_track" />-->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:text="窗帘"/>
+
+                <TextView
+                    android:id="@+id/curtain_show"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:text="窗帘状态：--"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/open_curtain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:text="合拢"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+                <Button
+                    android:id="@+id/close_curtain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:text="张开"
+                    android:textSize="15sp"
+                    android:onClick="onViewClicked"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:background="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp">
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
